@@ -127,6 +127,7 @@ a:focus {
     padding: 100px 0px;
     text-align: center;
     color: #fff;
+    position: relative;
     background: url(../img/regensburg.jpg) no-repeat center center fixed;
     background-color: #fff;
     -webkit-background-size: cover;
@@ -134,12 +135,17 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
     display: table;
-    
 }
 
 .intro-body {
     display: table-cell;
     vertical-align: middle;
+}
+
+.caption > p {
+    position: absolute;
+    bottom: 0px;
+    font-size: 16px;
 }
 
 .brand-heading {
@@ -254,6 +260,7 @@ a:focus {
     padding-top: 100px;
     padding-bottom: 100px;
     color: #fff;
+    position: relative;
     background: url(../img/uva-10.jpg) no-repeat center center fixed;
     background-color: #fff;
     -webkit-background-size: cover;
@@ -267,6 +274,7 @@ a:focus {
     height: 100%;
     padding-top: 100px;
     color: #fff;
+    position: relative;
     background: url(../img/richmond-5.jpg) no-repeat center center fixed;
     background-color: #000;
     -webkit-background-size: cover;
