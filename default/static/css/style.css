@@ -257,13 +257,14 @@ a:focus {
 }
 
 .footer {
-    font-size: 16px;
-    padding: 35px;
+    font-size: 14px;
+    padding: 20px 0px;
     text-align: left;
 }
 
 .footer p {
     margin: 0px;
+    font-size: 14px;
 }
 
 .footer a:hover,
