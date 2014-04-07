@@ -292,7 +292,7 @@ a:focus {
   width:100%;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.6);
 }
 
 .contact-filter {
@@ -358,6 +358,10 @@ a:focus {
     }
     
     .contact-filter {
+      padding-top: 200px;
+    }
+    
+    .resume-filter {
       padding-top: 200px;
     }
 }
@@ -448,8 +452,37 @@ body {
 .resume-element {
   margin-bottom: 35px;
   font-size: 18px;
+  /*background-color: rgba(0,0,0,.4);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px;*/
 }
 
 .element-heading {
   font-size: 22px;
+}
+
+#discvry li {
+  font-size: 20px;
+}
+
+#discvry ul {
+  padding: 0px;
+  list-style-position: inside;
+}
+
+#discvry a:hover,
+#discvry a:focus {
+  color: #000;
+}
+
+#about a:hover,
+#about a:focus {
+  color: #000;
+}
+
+.mission {
+  margin: 5px;
 }

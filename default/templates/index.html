@@ -49,7 +49,7 @@
                         <a href="#resume">Resume</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#projects">Projects</a>
+                        <a href="#discvry">Discvry</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -67,8 +67,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">
-                            <img class="featurette-image img-circle img-responsive center-block" src="http://placehold.it/300x300">
-                            <!-- <img class="featurette-image img-circle img-responsive center-block" width="300" src="img/profile-3.jpg"> -->
+                            <!--<img class="featurette-image img-circle img-responsive center-block" src="http://placehold.it/300x300">-->
+                            <img class="featurette-image img-circle img-responsive center-block" width="300" src="img/profile-10.jpg">
                         </h1>
                         <p class="intro-text">Systems Engineer | Developer | Entrepreneur</p>
                         <div class="page-scroll">
@@ -94,9 +94,17 @@
                 <h2>About</h2>
             </div>
             <div class="row section-content">
-              <div class="col-md-4">
-                <h3>Hello</h3>
-                <p>My name is Andy Keller...</p>
+              <div class="col-md-12">
+                <h3>Academic</h3>
+                <p>My name is Andreas Keller, or more commonly known as Andy, and I currently attend the School of Engineering and Applied Science (SEAS) at the University of Virginia. To tell you a little about myself, my primary major is systems engineering with a focus in financial engineering, and I am also working on a secondary major in economics and a minor in engineering business. I have had the honor of being accepted into two scholar programs here at the University. One is the Technology Leadership Program, which is a highly competitive program dedicated to interdisciplinary learning and leadership. The other is the Rodman Scholar Program, which consists of the top 5% of students enrolled in SEAS and is dedicated to outstanding academic performance, sustainability, and community culture and leadership.</p>
+              </div>
+              <div class="col-md-12">
+                <h3>Practical</h3>
+                <p>I have used much of what I have learned during my academic career in several of my experiential activities. These activities include being a section leader in the Cavalier Marching Band, being the founder and president of the Math Modeling Group at UVA (which competes every year in the Mathematical Contest in Modeling), being an undergraduate research assistant, and several personal projects. To elaborate briefly on my research position, I am currently assisting the Predictive Technology Laboratory (PTL) develop two open source software projects: an open research platform and a crime prediction platform. The open research platform allows researchers and data scientists to access PTL datasets and compete with each other to develop the best forecaster. The crime prediction platform (Asymmmetric Threat Tracker) will allow municipalities to input data to predict where crimes are more likely to occur.</p>
+              </div>
+              <div class="col-md-12">
+                <h3>Passion</h3>
+                <p>Now to disuss my true passion, my personal projects, which I have now consolidated under the name, <a href="http://www.discvry.com">Discvry</a>. These projects consist of several ideas that I believe will impact the world for the better. One in particular I feel will be my life’s work. I have a vision of developing a web portal through which an artist can attain any and all of his or her marketing needs, allowing for him or her to focus primarily on creating the art that makes this world so wonderful. My other ideas include a low net worth private wealth management software plateform, location based event updates, and crowdsourced education funding,among others. Ever since I can remember, I have wanted to help people (along with perhaps making a name for myself). These projects are my best bet at making peoples’ lives easier and changing the world, and I am dedicated to making them a reality.</p>
               </div>
             </div>
         </div>
@@ -109,7 +117,7 @@
                 <h2>Resume</h2>
             </div>
             <div class="row section-content">
-                <div class="col-md-6 resume-content">
+                <div class="col-md-7 resume-content">
                   <h3>Experience</h3>
                   
                   <div class="resume-element">
@@ -135,7 +143,7 @@
                     <p class="element-heading">Discvry, LLC - <a href="http://www.discvry.com">discvry.com</a></p>
                     <i>Founder and Developer</i>
                     <ul type="square">
-                      <li>Developing a variety of software projects including an artist social network, a low net worth private wealth management platform, and location based event updates</li>
+                      <li>Developing a variety of software projects including an artist social network, a low net worth private wealth management platform, location based event updates, and crowdfunded education</li>
                     </ul>
                   </div>
                   
@@ -148,7 +156,7 @@
                   </div>
                 </div>
                 
-                <div class="col-md-6 resume-content">
+                <div class="col-md-5 resume-content">
                   <h3>Education</h3>
                   <div class="resume-element">
                     <p class="element-heading">University of Virginia</p>
@@ -199,15 +207,30 @@
       </div>
     </section>
     
-    <section id="projects" class="content-section text-center">
+    <section id="discvry" class="content-section text-center">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2 section-heading">
-                <h2>Projects</h2>
+                <h2>Discvry</h2>
             </div>
             <div class="row section-content">
               <div class="col-md-4">
-                <h3>Discvry</h3>
-                <p>Discvry is an organization I founded in order to develop my ideas under one name...</p>
+                <h3>About</h3>
+                <p>Discvry is an organization I founded in order to gather and develop my ideas under one name. Visit our website for more information: <a href="http://www.discvry.com">Discvry</a></p>
+              </div>
+              <div class="col-md-4">
+                <h3>Mission</h3>
+                <p>Our mission is to develop software based products that benefit humanity. We sum this up in two statements:</p>
+                <h3 class="mission">"Make Money,</h3>
+                <h3 class="mission pull-right">Change the World."</h3>
+              </div>
+              <div class="col-md-4">
+                <h3>Current Projects</h3>
+                <ul type="square">
+                  <li>An artist's social network to provide any and all marketing needs</li>
+                  <li>Low net worth private wealth management software platform</li>
+                  <li>Location based event and notification updates</li>
+                  <li>Crowdsourced education funding</li>
+                </ul>
               </div>
             </div>
         </div>
@@ -284,13 +307,36 @@
     
     <script>
       $(document).ready(function(){
-        if (screen.width >= 767) {
+        /*if ($(window).width() >= 766) {
         	  $("#intro").data("speed", 10);
         	  $("#resume").data("speed", 10);
         	  $("#contact").data("speed", 10);
-        	  $("#resume").data("shift", 175);
-        	  $("#contact").data("shift", 325);
+        	  $("#resume").data("shift", 250);
+        	  $("#contact").data("shift", 450);
+        }*/
+        
+        if ($(window).width() >= 992) {
+        	  $("#intro").data("speed", 10);
+        	  $("#resume").data("speed", 10);
+        	  $("#contact").data("speed", 10);
+        	  $("#resume").data("shift", 250);
+        	  $("#contact").data("shift", 450);
         }
+        
+        /*if ($(window).width() >= 1200) {
+        	  $("#intro").data("speed", 10);
+        	  $("#resume").data("speed", 10);
+        	  $("#contact").data("speed", 10);
+        	  $("#resume").data("shift", 250);
+        	  $("#contact").data("shift", 450);
+        }*/
+        
+        /*$(window).resize(function() {
+        	  var d = new Date();
+            $(".resume-section").css("background", "url(../img/uva-10.jpg?"+d.getTime()+") no-repeat center center fixed");
+          }
+        });*/
+        
         
       	// Cache the Window object
       	$window = $(window);
