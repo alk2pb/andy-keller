@@ -483,6 +483,11 @@ body {
   color: #000;
 }
 
-.mission {
+.mission-element {
   margin: 5px;
+}
+
+.mission {
+  margin: 25px 0px;
+  height: 60px;
 }
