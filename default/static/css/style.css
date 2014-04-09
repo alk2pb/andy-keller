@@ -491,4 +491,5 @@ body {
 .mission {
   margin: 25px 0px;
   height: 60px;
+  max-width: 452px;
 }
