@@ -147,6 +147,7 @@ a:focus {
     bottom: 0px;
     margin-bottom: 25px;
     font-size: 16px;
+    color: #999;
 }
 
 .brand-heading {
@@ -257,6 +258,8 @@ a:focus {
 }
 
 .footer {
+    /*background-color: #5481e6;*/
+    color: #999;
     font-size: 14px;
     padding: 20px 0px;
     text-align: left;
@@ -267,14 +270,14 @@ a:focus {
     font-size: 14px;
 }
 
-.footer a:hover,
+/*.footer a:hover,
 .footer a:focus {
     color: #000;
 }
 
 .footer-menu-divider {
   color: #999;
-}
+}*/
 
 .resume-section {
     width: 100%;
@@ -339,8 +342,8 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     #map {
@@ -474,8 +477,76 @@ body {
   list-style-position: inside;
 }
 
+/*#discvry h3 {
+  color: #fff;
+  background-color: #5481e6;
+  padding: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}*/
+
+#discvry .section-heading {
+  padding: 20px;
+  background-color: #5481e6;
+  /*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+  margin-bottom: 35px;
+}
+
+#about .section-heading {
+  padding: 20px;
+  height: 110px;
+  background-color: #db4437;
+  /*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+  margin-bottom: 35px;
+}
+
+#about .section-closing {
+  padding: 20px;
+  background-color: #db4437;
+  height: 110px;
+  /*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+
+
+#discvry .section-closing {
+  padding: 20px;
+  background-color: #5481e6;
+  height: 110px;
+  /*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.section-header {
+  color: #fff;
+  margin: 0px;
+  font-family: "Syncopate",Helvetica,Arial,sans-serif;
+  font-size: 44px;
+}
+
+/*#discvry a {
+  color: #87a6ed;
+}*/
+
 #discvry a:hover,
 #discvry a:focus {
+  color: #000;
+}
+
+#discvry .mission h3 {
+  padding: 0px;
   color: #000;
 }
 
@@ -484,12 +555,41 @@ body {
   color: #000;
 }
 
-.mission-element {
+.mission-element-1 {
   margin: 5px;
+  text-align: left;
+}
+
+.mission-element-2 {
+  margin: 5px;
+  text-align: right;
 }
 
 .mission {
-  margin: 25px 0px;
-  height: 60px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 102px;
+  padding: 15px 0px;
   max-width: 452px;
+  /*background-color: #5481e6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;*/
+}
+
+.newline { clear: both; float: left; display: block; position: relative; }
+
+/*.navbar-header .navbar-brand {
+  color: #5481e6;
+}*/
+
+.first {
+  color: #fff;
+}
+
+.last {
+  color: #fff;
+  display: inline;
 }
