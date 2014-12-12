@@ -4,11 +4,13 @@ body {
     font-family: "Roboto",Helvetica,Arial,sans-serif;
     color: #191919;
     background-color: #fff;
+    min-height:100%;
 }
 
 html {
     width: 100%;
     height: 100%;
+    min-height:100%;
 }
 
 h1,
@@ -253,7 +255,6 @@ a:focus {
 }
 
 .footer {
-    /*background-color: #5481e6;*/
     color: #999;
     font-size: 14px;
     padding: 20px 0px;
@@ -279,6 +280,7 @@ a:focus {
     color: #fff;
     position: relative;
     background: url(../img/uva-10.jpg) no-repeat center center fixed;
+    background-attachment: fixed;
     background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -335,6 +337,10 @@ a:focus {
     background-color: transparent;
 }
 
+.content-section .featurette-image {
+    margin: 40px 0;
+}
+
 @media(min-width:767px) {
 
     #map {
@@ -359,6 +365,21 @@ a:focus {
     .resume-filter {
       padding-top: 200px;
     }
+    
+    .content-section .featurette-image {
+      margin: 0 0;
+    }
+    
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
 }
 
 .btn-default:hover,
@@ -437,12 +458,6 @@ body {
 .resume-element {
   margin-bottom: 35px;
   font-size: 18px;
-  /*background-color: rgba(0,0,0,.4);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
-  padding: 20px;*/
 }
 
 .element-heading {
@@ -461,9 +476,6 @@ body {
 .section-header {
   color: #000;
   margin: 0px;
-  /*line-height: 100px;
-  vertical-align: center;
-  font-family: "Syncopate",Helvetica,Arial,sans-serif;*/
   font-size: 44px;
 }
 
@@ -505,19 +517,4 @@ body {
   height: 102px;
   padding: 15px 0px;
   max-width: 452px;
-  /*background-color: #5481e6;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;*/
-}
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
 }
