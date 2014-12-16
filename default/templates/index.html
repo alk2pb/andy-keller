@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="About Me">
+    <meta name="author" content="Andy L. T. Keller">
+    <meta name="HandheldFriendly" content="true" />
 
     <title>Andy L. T. Keller</title>
 
@@ -13,7 +14,7 @@
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
     
@@ -71,7 +72,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">
-                            <div class="profile-picture-container center-block"><img class="featurette-image img-circle img-responsive center-block shadow-z-4 profile-picture" src="img/profile.jpg"></div>
+                            <div class="profile-picture-container center-block"><img class="featurette-image img-circle img-responsive shadow-z-4 profile-picture" src="img/profile.jpg"></div>
                         </h1>
                         <p class="intro-text">Systems Engineer | Developer | Entrepreneur</p>
                         <div class="page-scroll">
@@ -82,8 +83,8 @@
                     </div>
                 </div>
                 
-                <div class="caption pull-left">
-                  <p class="text-muted">Regensburg, Germany</p>
+                <div class="caption pull-left" data-toggle="modal" data-target="#regensburgModal">
+                  <p data-toggle="tooltip" data-placement="top" title="More info">Regensburg, Germany</p>
                 </div>
             </div>
         </div>
@@ -119,6 +120,15 @@
               <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=">
             </div>
           </div>
+          <div class="row featurette shadow-z-1">
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=">
+            </div>
+            <div class="col-md-7">
+              <h2 class="featurette-heading withripple">Personal <span class="text-muted"></span></h2>
+              <p>...</p>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -127,7 +137,7 @@
             <div class="section-heading text-center section-heading-raised withripple">
                 <h2>Resume</h2>
             </div>
-            <button class="btn btn-fab btn-material-white shadow-z-2 resume-link"><i class="fa fa-download fa-fw"></i></button>
+            <a href="files/Keller_Resume.pdf" download="Keller_Resume.pdf"><button class="btn btn-fab btn-material-white shadow-z-2 resume-link" data-toggle="tooltip" data-placement="top" title="Download resume"><i class="fa fa-download fa-fw"></i></button></a>
             <div class="row">
                 <div class="col-md-7 resume-content">
                   <h3 class="featurette-heading withripple text-left">Experience</h3>
@@ -210,8 +220,8 @@
                   </div>
                 </div>
             </div>
-            <div class="caption pull-left">
-              <p class="text-muted">University of Virginia</p>
+            <div class="caption pull-left" data-toggle="modal" data-target="#uvaModal">
+              <p data-toggle="tooltip" data-placement="top" title="More info">University of Virginia</p>
             </div>
         </div>
     </section>
@@ -302,7 +312,7 @@
                 <div class="col-lg-12 col-lg-offset-0">
                     <h2 class="section-heading section-heading-raised withripple">Contact or Follow Me</h2>
                     <ul class="list-inline banner-social-buttons">
-                        <li><a href="mailto:andykeller@discvry.com" class="btn btn-default btn-lg btn-margin" target="_blank"><i class="glyphicon glyphicon-envelope"></i> <span class="network-name">E-Mail</span></a>
+                        <li><a href="mailto:andykeller@discvry.com" class="btn btn-default btn-lg btn-margin" target="_blank"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">E-Mail</span></a>
                         </li>
                         <li><a href="https://plus.google.com/u/0/108735871269718468972/posts" class="btn btn-default btn-lg btn-margin" target="_blank"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
                         </li>
@@ -317,13 +327,72 @@
                     </ul>
                 </div>
             </div>
-            <div class="caption pull-left">
-              <p class="text-muted">Richmond, Virginia</p>
+            <div class="caption pull-left" data-toggle="modal" data-target="#richmondModal">
+              <p data-toggle="tooltip" data-placement="top" title="More info">Richmond, Virginia</p>
             </div>
         </div>
     </section>
     
-    <button class="btn btn-fab btn-material-blue more-btn shadow-z-2"><img class="plus" src="img/plus.png"></button>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><!--<img class="plus" src="img/plus.png">-->
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+      ">
+      <button class="btn btn-fab btn-material-blue more-btn shadow-z-2" data-toggle="tooltip" data-placement="top" title="Donate"><i class="fa fa-paypal fa-fw"></i></button>
+    </form>
+    
+    <div class="modal fade" id="regensburgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--<button type="button" class="btn btn-default">Confirm</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="uvaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--<button type="button" class="btn btn-default">Confirm</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="richmondModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--<button type="button" class="btn btn-default">Confirm</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
     
     <footer class="shadow-z-2-equal">
       <div class="container">
@@ -359,6 +428,10 @@
     
     <script>
       $.material.init();
+      
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
     </script>
 
 </body>

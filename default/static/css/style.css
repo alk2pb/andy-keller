@@ -97,9 +97,9 @@ a:focus {
 }
 
 .navbar-custom .nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out;
     padding: 20px 15px;
 }
 
@@ -184,7 +184,7 @@ a:focus {
 
 .intro-body {
     display: table-cell;
-    vertical-align: middle;
+    padding: 0px;
 }
 
 .caption > p {
@@ -192,8 +192,23 @@ a:focus {
     bottom: 0px;
     margin-bottom: 25px;
     font-size: 16px;
-    color: #999;
 }
+
+.caption {
+  color: #999;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.caption:hover,
+.caption:focus,
+.caption:active {
+  color: #fff;
+  cursor: pointer;
+}
+
+
 
 .brand-heading {
     font-size: 40px;
@@ -212,6 +227,7 @@ a:focus {
     .intro-body {
         padding-top: 50px;
         padding-bottom: 50px;
+        vertical-align: middle;
     }
 
     .brand-heading {
@@ -236,9 +252,9 @@ a:focus {
     font-size: 40px;
     color: #fff;
     background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out;
 }
 
 .btn-circle:hover,
@@ -252,9 +268,9 @@ a:focus {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
     position: relative;
     cursor: pointer;
 }
@@ -359,6 +375,16 @@ a:focus {
   color: white;
 }
 
+.more-btn i {
+  font-size: 20px;
+}
+
+.more-btn:hover,
+.more-btn:focus,
+.more-btn:active {
+  color: #fff;
+}
+
 .btn-material-blue {
   background-color: #4367b8;
 }
@@ -460,7 +486,7 @@ footer p {
     width: 100%;
     color: #fff;
     position: relative;
-    background: url(../img/uva-10.jpg) no-repeat center center;
+    background: url(../img/uva.jpg) no-repeat center center;
     background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -504,7 +530,7 @@ footer p {
 
 @media(min-width:767px) {
     .resume-section {
-        background: url(../img/uva-10.jpg) no-repeat center center fixed;
+        background: url(../img/uva.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -514,10 +540,6 @@ footer p {
     .resume-content {
       padding: 0px 50px;
     }
-    
-    .resume-section {
-      padding-top: 200px;
-    }
 }
 
 /**
@@ -526,9 +548,8 @@ footer p {
 .contact-section {
     width: 100%;
     color: #fff;
-    padding-top: 100px;
     position: relative;
-    background: url(../img/richmond-5.jpg) no-repeat center center;
+    background: url(../img/richmond.jpg) no-repeat center center;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -539,15 +560,11 @@ footer p {
 
 @media(min-width:767px) {
   .contact-section {
-      background: url(../img/richmond-5.jpg) no-repeat center center fixed;
+      background: url(../img/richmond.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
       -o-background-size: cover;
-  }
-  
-  .contact-section {
-      padding-top: 200px;
   }
 }
 
@@ -619,7 +636,7 @@ body {
  * General Content Section Styles
  */
 .content-section {
-  padding: 140px 0;
+  padding: 100px 0;
 }
 
 .section-heading {
@@ -707,6 +724,10 @@ body {
 /**
  * Utility Styles
  */
+.clear {
+  clear: both;
+}
+ 
 .text-left {
   text-align: left;
 }
@@ -749,6 +770,7 @@ body {
 .profile-picture-container {
   width: 150px;
   height: 150px;
+  margin: 40px auto;
 }
 
 .profile-picture-collapse {
@@ -779,4 +801,42 @@ body {
     height: 100px;
     top: 5px;
   }
+}
+
+/**
+ * Modal Styles
+ */
+.modal {
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+}
+
+.modal-header {
+  background-color: #4367b8;
+  color: #fff;
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.modal-footer {
+  -webkit-border-bottom-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background-color: #fff;
+}
+
+.close {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.close:hover {
+  color: white;
 }
