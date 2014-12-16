@@ -2,10 +2,10 @@
 var position_profile = $(".navbar-brand-name").position();
 
 if ($(window).width() >= 767){
-  $(".profile-picture-collapse").css("left",position_profile.left + 140);
+  $(".profile-picture-collapse").css("left",position_profile.left + 145);
 }
 else {
-  $(".profile-picture-collapse").css("left",position_profile.left + 130);
+  $(".profile-picture-collapse").css("left",position_profile.left + 135);
 }
 
 var position_resume = $("#resume").find(".section-heading").position();
@@ -31,14 +31,12 @@ function resizeend() {
         setTimeout(resizeend, delta);
     } else {
         timeout = false;
-        //alert('Done resizing');
-    }
-    position_profile = $(".navbar-brand-name").position();
+        position_profile = $(".navbar-brand-name").position();
     if ($(window).width() >= 767){
-      $(".profile-picture-collapse").css("left",position_profile.left + 140);
+      $(".profile-picture-collapse").css("left",position_profile.left + 145);
     }
     else {
-      $(".profile-picture-collapse").css("left",position_profile.left + 130);
+      $(".profile-picture-collapse").css("left",position_profile.left + 135);
     }
     
     position_resume = $("#resume").find(".section-heading").position();
@@ -49,6 +47,7 @@ function resizeend() {
     
     $(".resume-link").css("left",resumepositionleft);
     $(".resume-link").css("top",resumepositiontop);
+    }
 }
 
 // Prevent collapse event from being triggered unless navbar-toggle is clicked
