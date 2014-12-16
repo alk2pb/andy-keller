@@ -53,7 +53,7 @@ function resizeend() {
 
 // Prevent collapse event from being triggered unless navbar-toggle is clicked
 // or navbar-collapse is visible and the click event is off of the navbar
-$("html").click(function(event) {
+/*$("html").click(function(event) {
   
   if ($(window).width() >= 767){
     event.stopPropagation();
@@ -70,7 +70,7 @@ $(".navbar").click(function(event) {
   if (!$(event.target).hasClass("navbar-toggle")){
     event.stopPropagation();
   }
-});
+});*/
 
 // Change shadow of the profile-picture with mouseover
 $(".navbar-brand").mouseover(function() {

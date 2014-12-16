@@ -760,6 +760,7 @@ body {
   -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
         transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
+  margin: 0px;
 }
 
 @media(min-width:767px) {
@@ -776,7 +777,5 @@ body {
   .profile-picture-collapse {
     left:85px;
     right:auto;
-    top: 10px;
-    
   }
 }
