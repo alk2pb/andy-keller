@@ -1,20 +1,19 @@
-var position = $(".navbar-brand-name").position();
+// Position the profile-picture-collapse and resume-link elements correctly
+var position_profile = $(".navbar-brand-name").position();
+
 if ($(window).width() >= 767){
-  $(".profile-picture-collapse").css("left",position.left + 140);
+  $(".profile-picture-collapse").css("left",position_profile.left + 140);
 }
 else {
-  $(".profile-picture-collapse").css("left",position.left + 130);
+  $(".profile-picture-collapse").css("left",position_profile.left + 130);
 }
 
-var position2 = $(".resume-container").find(".section-heading").position();
-
-var resumepositionleft = position2.left + $(".resume-container").find(".section-heading").width() - 26;
-
-var resumepositiontop = position2.top + 10;
+var position_resume = $("#resume").find(".section-heading").position();
+var resumepositionleft = position_resume.left + $("#resume").find(".section-heading").width() - 26;
+var resumepositiontop = position_resume.top + 10;
 
 $(".resume-link").css("left",resumepositionleft);
 $(".resume-link").css("top",resumepositiontop);
-
 
 var rtime = new Date(1, 1, 2000, 12,00,00);
 var timeout = false;
@@ -34,24 +33,26 @@ function resizeend() {
         timeout = false;
         //alert('Done resizing');
     }
-    position = $(".navbar-brand-name").position();
+    position_profile = $(".navbar-brand-name").position();
     if ($(window).width() >= 767){
-      $(".profile-picture-collapse").css("left",position.left + 140);
+      $(".profile-picture-collapse").css("left",position_profile.left + 140);
     }
     else {
-      $(".profile-picture-collapse").css("left",position.left + 130);
+      $(".profile-picture-collapse").css("left",position_profile.left + 130);
     }
     
-    position2 = $(".resume-container").find(".section-heading").position();
+    position_resume = $("#resume").find(".section-heading").position();
 
-    var resumepositionleft = position2.left + $(".resume-container").find(".section-heading").width() - 26;
+    var resumepositionleft = position_resume.left + $("#resume").find(".section-heading").width() - 26;
     
-    var resumepositiontop = position2.top + 10;
+    var resumepositiontop = position_resume.top + 10;
     
     $(".resume-link").css("left",resumepositionleft);
     $(".resume-link").css("top",resumepositiontop);
 }
 
+// Prevent collapse event from being triggered unless navbar-toggle is clicked
+// or navbar-collapse is visible and the click event is off of the navbar
 $("html").click(function(event) {
   
   if ($(window).width() >= 767){
@@ -71,6 +72,7 @@ $(".navbar").click(function(event) {
   }
 });
 
+// Change shadow of the profile-picture with mouseover
 $(".navbar-brand").mouseover(function() {
         $(".profile-picture-collapse").addClass("shadow-z-2-hover");
       });
@@ -78,6 +80,7 @@ $(".navbar-brand").mouseover(function() {
         $(".profile-picture-collapse").removeClass("shadow-z-2-hover");
       });
 
+// Adjust heights of intro and contact sections
 if ($("#intro").height() < $(window).height()){
   $("#intro").height($(window).height());
 }
@@ -98,15 +101,6 @@ $(window).scroll(function() {
         $(".profile-picture").fadeIn(800);
         $(".profile-picture-collapse").fadeOut(800);
     }
-    
-    /*if ($(document).height() - ($(window).scrollTop() + $(window).height()) <= 92){
-      $(".footer").show();
-    }
-    else {
-      $(".footer").hide();
-    }*/
-    
-    
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
