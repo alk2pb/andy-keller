@@ -252,6 +252,7 @@ a:focus {
     font-size: 40px;
     color: #fff;
     background: 0 0;
+    position: relative;
     -webkit-transition: background .2s ease-in-out;
     -moz-transition: background .2s ease-in-out;
     transition: background .2s ease-in-out;
