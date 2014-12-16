@@ -5,7 +5,8 @@ if ($(window).width() >= 767){
   $(".profile-picture-collapse").css("left",position_profile.left + 145);
 }
 else {
-  $(".profile-picture-collapse").css("left",position_profile.left + 135);
+  //$(".profile-picture-collapse").css("left",position_profile.left + 135);
+  $(".profile-picture-collapse").css("left",$(".navbar").width()/2 - 25);
 }
 
 var position_resume = $("#resume").find(".section-heading").position();
@@ -36,7 +37,8 @@ function resizeend() {
       $(".profile-picture-collapse").css("left",position_profile.left + 145);
     }
     else {
-      $(".profile-picture-collapse").css("left",position_profile.left + 135);
+      //$(".profile-picture-collapse").css("left",position_profile.left + 135);
+      $(".profile-picture-collapse").css("left",$(".navbar").width()/2 - 25);
     }
     
     position_resume = $("#resume").find(".section-heading").position();
