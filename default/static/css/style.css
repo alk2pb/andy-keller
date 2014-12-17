@@ -187,29 +187,6 @@ a:focus {
     padding: 0px;
 }
 
-.caption > p {
-    position: absolute;
-    bottom: 0px;
-    margin-bottom: 25px;
-    font-size: 16px;
-}
-
-.caption {
-  color: #999;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-
-.caption:hover,
-.caption:focus,
-.caption:active {
-  color: #fff;
-  cursor: pointer;
-}
-
-
-
 .brand-heading {
     font-size: 40px;
 }
@@ -512,6 +489,7 @@ footer p {
   margin-bottom: 35px;
   padding: 15px;
   font-size: 18px;
+  text-align: justify;
   color: #000;
   background-color: #fff;
   webkit-border-radius: 2px;
@@ -840,4 +818,30 @@ body {
 
 .close:hover {
   color: white;
+}
+
+/**
+ * Caption Styles
+ */
+.caption > p {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.caption {
+  color: #999;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+@media(min-width:767px) {
+  .caption:hover,
+  .caption:focus,
+  .caption:active {
+    color: #fff;
+    cursor: pointer;
+  }
 }
