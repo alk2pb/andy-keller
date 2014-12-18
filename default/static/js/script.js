@@ -1,4 +1,79 @@
 $(document).ready(function() {
+  
+  // Make more-btns visible
+  var dimension = 0;
+  $(".btn-fab-mini").each(function() {
+    dimension = dimension + 72;
+  });
+  
+  if ($(window).width() >= 767){
+    $("#more-btn-group").mouseenter(function() {
+      $(".btn-fab-mini").each(function() {
+        $(this).removeClass("under");
+        
+      });
+      $("#more-btn-group").addClass("in");
+      
+      if ($(window).height() >= dimension){
+        $("#more-btn-group").css("height", dimension);
+        $(".animation-rotate").rotate({duration:200,animateTo:540})
+      }
+      else {
+        $("#more-btn-group").css("width", dimension);
+        $(".animation-rotate").rotate({duration:200,animateTo:450})
+      }
+    });
+    $("#more-btn-group").mouseleave(function() {
+      $(".btn-fab-mini").each(function() {
+        $(this).addClass("under");
+      });
+      $("#more-btn-group").removeClass("in");
+      
+      if ($(window).height() >= dimension){
+        $("#more-btn-group").css("height", 76);
+        $(".animation-rotate").rotate({duration:200,animateTo:0})
+      }
+      else {
+        $("#more-btn-group").css("width", 76);
+        $(".animation-rotate").rotate({duration:200,animateTo:-90})
+      }
+    });
+  }
+  else {
+    $("html").click(function(event) {
+      if (jQuery.contains(document.getElementById("more-btn-group"),event.target) && !$("#more-btn-group").hasClass("in")){
+        $(".btn-fab-mini").each(function() {
+          $(this).removeClass("under");
+        });
+        $("#more-btn-group").addClass("in");
+        
+        if ($(window).height() >= dimension){
+          $("#more-btn-group").css("height", dimension);
+          $(".animation-rotate").rotate({duration:200,animateTo:540});
+        }
+        else {
+          $("#more-btn-group").css("width", dimension);
+          $(".animation-rotate").rotate({duration:200,animateTo:450});
+        }
+      }
+      else {
+        $(".btn-fab-mini").each(function() {
+          $(this).addClass("under");
+        });
+        $("#more-btn-group").removeClass("in");
+        
+        if ($(window).height() >= dimension){
+          $("#more-btn-group").css("height", 76);
+          $(".animation-rotate").rotate({duration:200,animateTo:0});
+        }
+        else {
+          $("#more-btn-group").css("width", 76);
+          $(".animation-rotate").rotate({duration:200,animateTo:-90});
+        }
+      }
+    });
+  }
+  
   // Position the profile-picture-collapse and resume-link elements correctly
   var position_profile = $(".navbar-brand-name").position();
   
@@ -25,6 +100,12 @@ $(document).ready(function() {
       if (timeout === false) {
           timeout = true;
           setTimeout(resizeend, delta);
+      }
+      if ($(window).height() >= dimension){
+        $(".animation-rotate").rotate({duration:200,animateTo:0})
+      }
+      else {
+        $(".animation-rotate").rotate({duration:200,animateTo:-90})
       }
   });
   
@@ -57,7 +138,7 @@ $(document).ready(function() {
   // or navbar-collapse is visible and the click event is off of the navbar
   $("html").click(function(event) {
     if ($(window).width() < 767){
-      if ($(".navbar-collapse").is(":visible") && !$(event.target).hasClass("navbar-header") && !$(event.target).hasClass("navbar-collapse")){
+      if ($(".navbar-collapse").is(":visible") && !$(event.target).hasClass("navbar-header")){
         $(".navbar-collapse").collapse("toggle");
       }
     }
@@ -80,7 +161,7 @@ $(document).ready(function() {
     $("#intro").height(height);
   }
   if ($("#contact").height() < height){
-    $("#contact").height(height - 200);
+    $("#contact").height(height);
   }
   
   //jQuery to collapse the navbar on scroll
