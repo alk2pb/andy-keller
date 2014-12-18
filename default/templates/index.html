@@ -126,7 +126,7 @@
             </div>
             <div class="col-md-7">
               <h2 class="featurette-heading withripple">Personal <span class="text-muted"></span></h2>
-              <p><!--A few tidbits about myself, I was born in Regensburg, Germany to a German father and a Vietnamese mother. However, we moved to Richmond, Virginia when I was three and a half and I have lived here ever since. My parents were adamant that I learn both of their mother tounges and I also picked up a bit of French in High School. I do intend to live for a couple years in Germany in the near future. My sister, who is a decade and one year older than me, currently resides in San Diego, California, my favorite city in the United States. Her and I get along very well and we share many of the same interests. For example, as well as our parents, thoroughly enjoy tennis. We also enjoy the good things in life, like traveling, food, nice weather (which is why I love San Diego), and so forth. Unlike my sister, I am also an avid runner and love to bike. I would also consider myself a techie and perhaps even a nerd (at least the good aspects). I will begin working as a software developer for Epic Systems at the end of next summer. Epic develops medical software that covers over half the population of the United States, thus I am very glad that the software I develop will be going to a good cause. Still, it is my life goal to start my own technology company that develops products that make the world a better place.--></p>
+              <p>A few tidbits about myself, I was born in Regensburg, Germany to a German father and a Vietnamese mother. However, we moved to Richmond, Virginia when I was three and a half and I have lived here ever since. My parents were adamant that I learn both of their mother tounges and I also picked up a bit of French in High School. I do intend to live for a couple years in Germany in the near future. My sister currently resides in San Diego, California, my favorite city in the United States. Her and I get along very well and we share many of the same interests. For example, as well as our parents, thoroughly enjoy tennis. We also enjoy the good things in life, like traveling, food, nice weather (which is why I love San Diego), and so forth. Unlike my sister, I am also an avid runner and love to bike. I would also consider myself a techie and perhaps even a nerd (at least the good aspects). I will begin working as a software developer for Epic Systems at the end of next summer. Epic develops medical software that covers over half the population of the United States, thus I am very glad that the software I develop will be going to a good cause. Still, it is my life goal to start my own technology company that develops products that make the world a better place.</p>
             </div>
           </div>
       </div>
@@ -455,9 +455,11 @@
     <script>
       $.material.init();
       
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip({container: 'body'})
-      });
+      if ($(window).width() >= 767){
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip({container: 'body'})
+        });
+      }
     </script>
 
 </body>
