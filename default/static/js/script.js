@@ -140,23 +140,30 @@ $(document).ready(function() {
           setTimeout(resizeend, delta);
       } else {
           timeout = false;
+          
           position_profile = $(".navbar-brand-name").position();
-      if ($(window).width() >= 767){
-        $(".profile-picture-collapse").css("left",position_profile.left + 145);
-      }
-      else {
-        //$(".profile-picture-collapse").css("left",position_profile.left + 135);
-        $(".profile-picture-collapse").css("left",$(".navbar").width()/2 - 25);
-      }
+          if ($(window).width() >= 767){
+            $(".profile-picture-collapse").css("left",position_profile.left + 145);
+          }
+          else {
+            //$(".profile-picture-collapse").css("left",position_profile.left + 135);
+            $(".profile-picture-collapse").css("left",$(".navbar").width()/2 - 25);
+          }
+          
+          position_resume = $("#resume").find(".section-heading").position();
       
-      position_resume = $("#resume").find(".section-heading").position();
-  
-      var resumepositionleft = position_resume.left + $("#resume").find(".section-heading").width() - 26;
-      
-      var resumepositiontop = position_resume.top + 10;
-      
-      $(".resume-link").css("left",resumepositionleft);
-      $(".resume-link").css("top",resumepositiontop);
+          var resumepositionleft = position_resume.left + $("#resume").find(".section-heading").width() - 26;
+          
+          var resumepositiontop = position_resume.top + 10;
+          
+          $(".resume-link").css("left",resumepositionleft);
+          $(".resume-link").css("top",resumepositiontop);
+          
+          if ($(window).height() < dimension){
+            $(".btn-fab-more").each(function() {
+              $(this).attr("data-placement","top");
+            });
+          }
       }
   }
   
@@ -182,12 +189,12 @@ $(document).ready(function() {
   
   // Adjust heights of intro and contact sections
   
-  var height = $(window).height() - 1;
+  var height = $(window).height();
   if ($("#intro").height() < height){
     $("#intro").height(height);
   }
   if ($("#contact").height() + 200 < height){
-      $("#contact").height(height - 200);
+      $("#contact").height(height - 201);
   }
   
   //jQuery to collapse the navbar on scroll
