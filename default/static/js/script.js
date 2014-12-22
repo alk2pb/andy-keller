@@ -158,12 +158,6 @@ $(document).ready(function() {
           
           $(".resume-link").css("left",resumepositionleft);
           $(".resume-link").css("top",resumepositiontop);
-          
-          if ($(window).height() < dimension){
-            $(".btn-fab-more").each(function() {
-              $(this).attr("data-placement","top");
-            });
-          }
       }
   }
   
