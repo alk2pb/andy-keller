@@ -43,7 +43,7 @@ section {
     section {
       padding: 0px;
     }
-    
+
     p {
         margin: 0 0 35px;
         font-size: 20px;
@@ -205,7 +205,7 @@ a:focus {
         height: 100%;
         padding: 0;
     }
-    
+
     .intro-body {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -395,11 +395,11 @@ a:focus {
   .banner-social-buttons {
     margin: 100px 0;
   }
-  
+
   .banner-social-buttons li {
     padding: 10px;
   }
-  
+
   .btn-fab.btn-lg {
     font-size: 50px;
     width: 100px;
@@ -484,33 +484,33 @@ a:focus {
     right: 18px;
     bottom: 362px;
   }
-  
+
   .recruit-btn {
     right: 18px;
     bottom: 306px;
   }
-  
+
   .comment-btn {
     right: 18px;
     bottom: 250px;
   }
-  
+
   .share-btn {
     right: 18px;
     bottom: 194px;
   }
-  
+
   .donate-btn {
     right: 18px;
     bottom: 138px;
   }
-  
+
   .copyright-btn {
     position:absolute;
     right: 18px;
     bottom: 82px;
   }
-  
+
   .more-btn i {
     transform: rotate(0deg);
   }
@@ -570,7 +570,7 @@ a:focus {
 }*/
 
 @media(min-width:767px) {
-  
+
   .btn-fab:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.23), 0 10px 30px rgba(0, 0, 0, 0.19);
   }
@@ -700,30 +700,32 @@ footer p {
         background-size: cover;
         -o-background-size: cover;
     }
-    
+
     .resume-content {
       padding: 0px 50px;
     }
 }
 
 /**
- * Contact Section Styles
+ * Connect Section Styles
  */
-.contact-section {
+.connect-section {
     width: 100%;
     color: #fff;
     position: relative;
+    /*position: fixed;
+    bottom: 0px;*/
     background: url(../img/richmond.jpg) no-repeat center center;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    z-index: 0;
+    z-index: -1;
 }
 
 @media(min-width:767px) {
-  .contact-section {
+  .connect-section {
       background: url(../img/richmond.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -888,7 +890,7 @@ body {
 /**
  * Utility Styles
  */
- 
+
 .text-left {
   text-align: left;
 }
@@ -925,7 +927,6 @@ body {
   height: 150px;
   z-index:9999;
   position:relative;
-  
 }
 
 .profile-picture-container {
@@ -951,7 +952,7 @@ body {
     width: 300px;
     height: 300px;
   }
-  
+
   .profile-picture-container {
     width: 300px;
     height: 300px;
