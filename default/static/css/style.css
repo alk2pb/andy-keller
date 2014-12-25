@@ -8,6 +8,7 @@ body {
     color: #191919;
     background-color: #ececec;
     position: relative;
+    display: none;
 }
 
 html {

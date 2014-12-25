@@ -1,4 +1,15 @@
 $(document).ready(function() {
+  // Adjust heights of intro and connect sections
+  var height = $(window).height();
+  if ($("#intro").height() < height){
+    $("#intro").height(height);
+  }
+  if ($("#connect").height() + 200 < height){
+      $("#connect").height(height - 201);
+  }
+
+  $('body').show()
+
   // Make more-btns visible
   var dimension = 0;
   $(".btn-fab-more").each(function() {
@@ -84,7 +95,7 @@ $(document).ready(function() {
   }
 
   // Position the profile-picture-collapse and resume-link elements correctly
-  var position_profile = $(".navbar-brand-name").position();
+  var position_profile = $(".navbar-brand").position();
 
   if ($(window).width() >= 767){
     $(".profile-picture-collapse").css("left",position_profile.left + 145);
@@ -181,16 +192,6 @@ $(document).ready(function() {
     $(".profile-picture-collapse").removeClass("shadow-z-2-hover");
   });
 
-  // Adjust heights of intro and connect sections
-
-  var height = $(window).height();
-  if ($("#intro").height() < height){
-    $("#intro").height(height);
-  }
-  if ($("#connect").height() + 200 < height){
-      $("#connect").height(height - 201);
-  }
-
   //jQuery to collapse the navbar on scroll
   $(window).scroll(function() {
       if ($(".navbar").offset().top > 50) {
@@ -216,4 +217,6 @@ $(document).ready(function() {
           event.preventDefault();
       });
   });
+
+
 });
