@@ -47,6 +47,10 @@ nav .nav-wrapper ul li:hover {
   position: absolute;
 }
 
+nav .nav-wrapper i.copyright-icon {
+  font-size: 14px;
+}
+
 #projects,
 .slider,
 .slick-list {
@@ -98,6 +102,10 @@ nav .nav-wrapper ul li:hover {
   background-color: #ff9800 !important;
 }
 
+.made-by {
+  display: inline;
+}
+
 @media(max-width:600px) {
   #nav-left li a,
   #nav-right li a {
@@ -110,6 +118,10 @@ nav .nav-wrapper ul li:hover {
 
   #nav-right {
     padding-right: 10px;
+  }
+
+  .made-by {
+    display: none;
   }
 }
 

@@ -52,58 +52,50 @@ $(document).ready(function() {
     $('.copyright').css('left', $(window).width()/2 - $('.copyright').width()/2 + 'px');
   });
 
-
-
-  //Firefox
- $('body').bind('DOMMouseScroll', function(e){
-     if(e.originalEvent.detail > 0) {
-         //scroll down
-         if ($('.slider').slick("slickCurrentSlide") < ($('.slider').slick("slickSlidePositionCount"))){
-           $('.slider').slick("slickNext");
-         }
-     }else {
-         //scroll up
-         if ($('.slider').slick("slickCurrentSlide") > 0){
-           $('.slider').slick("slickPrev");
-         }
-     }
-
-     //prevent page fom scrolling
+  // Firefox
+  $('body').bind('DOMMouseScroll', function(e){
+    if(e.originalEvent.detail > 0) {
+      // scroll down
+      if ($('.slider').slick("slickCurrentSlide") < ($('.slider').slick("slickSlidePositionCount"))){
+        $('.slider').slick("slickNext");
+      }
+    }else {
+      // scroll up
+      if ($('.slider').slick("slickCurrentSlide") > 0){
+        $('.slider').slick("slickPrev");
+      }
+    }
+    // prevent page fom scrolling
     // return false;
- });
+  });
 
- //IE, Opera, Safari
- $('body').bind('mousewheel', function(e){
-     if(e.originalEvent.wheelDelta < 0) {
-         //scroll down
-         if ($('.slider').slick("slickCurrentSlide") < ($('.slider').slick("slickSlidePositionCount"))){
-           $('.slider').slick("slickNext");
-         }
-
-     }else {
-         //scroll up
-         if ($('.slider').slick("slickCurrentSlide") > 0){
-           $('.slider').slick("slickPrev");
-         }
-
-     }
-
-
-     //prevent page fom scrolling
+  // IE, Opera, Safari
+  $('body').bind('mousewheel', function(e){
+    if(e.originalEvent.wheelDelta < 0) {
+      // scroll down
+      if ($('.slider').slick("slickCurrentSlide") < ($('.slider').slick("slickSlidePositionCount"))){
+        $('.slider').slick("slickNext");
+      }
+    }else {
+      // scroll up
+      if ($('.slider').slick("slickCurrentSlide") > 0){
+        $('.slider').slick("slickPrev");
+      }
+    }
+    // prevent page fom scrolling
     // return false;
- });
+  });
 
-// $('body').click(function (evt) {
-//   alert(evt.target);
-// });
+  $('body').keydown(function(event) {
+    if (event.keyCode === 38) {
+      if ($('.slider').slick("slickCurrentSlide") > 0){
+        $('.slider').slick("slickPrev");
+      }
 
-// $('.slick-dots').click(function (evt) {
-//     evt.stopPropagation();
-//     alert(evt.target.nodeName);
-//     // Your code here
-// });
-
-  // $('.tooltipped').each(function() {
-  //   $(this).mouseenter();
-  // });
+    } else if (event.keyCode === 40) {
+      if ($('.slider').slick("slickCurrentSlide") < ($('.slider').slick("slickSlidePositionCount"))){
+        $('.slider').slick("slickNext");
+      }
+    }
+  });
 });

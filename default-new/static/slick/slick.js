@@ -788,7 +788,7 @@
 
     };
 
-    Slick.prototype.getDotCount = Slick.prototype.slickSlidePositionCount= function() {
+    Slick.prototype.getDotCount = Slick.prototype.slickSlidePositionCount = function() {
 
         var _ = this;
 
@@ -1139,7 +1139,7 @@
             }
 
         } else if (event.keyCode === 40 && _.options.accessibility === true) {
-            if (_.currentSlide < _.slideCount) {
+            if (_.currentSlide < (Math.ceil(_.slideCount / _.options.slidesToScroll) - 1)) {
               _.changeSlide({
                   data: {
                       message: 'next'
