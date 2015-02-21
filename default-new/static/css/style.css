@@ -66,6 +66,7 @@ nav .nav-wrapper ul li:hover {
 
 .slick-dots {
   margin: 0px;
+  padding: 0px;
   position: absolute;
 }
 
@@ -101,6 +102,21 @@ nav .nav-wrapper ul li:hover {
   #nav-left li a,
   #nav-right li a {
     padding: 0 5px;
+  }
+
+  #nav-left {
+    padding-left: 10px;
+  }
+
+  #nav-right {
+    padding-right: 10px;
+  }
+}
+
+@media(max-width:350px) {
+  #nav-left li a,
+  #nav-right li a {
+    padding: 0 2px;
   }
 
   #nav-left {

@@ -1003,7 +1003,10 @@
         var _ = this;
 
         if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
-            $('li', _.$dots).on('click.slick', {
+            // $('li', _.$dots).on('click.slick', {
+            //     message: 'index'
+            // }, _.changeSlide);
+            $('li .btn').on('click.slick', {
                 message: 'index'
             }, _.changeSlide);
         }

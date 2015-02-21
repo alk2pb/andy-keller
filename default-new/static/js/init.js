@@ -93,6 +93,16 @@ $(document).ready(function() {
     // return false;
  });
 
+// $('body').click(function (evt) {
+//   alert(evt.target);
+// });
+
+// $('.slick-dots').click(function (evt) {
+//     evt.stopPropagation();
+//     alert(evt.target.nodeName);
+//     // Your code here
+// });
+
   // $('.tooltipped').each(function() {
   //   $(this).mouseenter();
   // });
