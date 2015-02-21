@@ -1,6 +1,9 @@
 /* Custom Stylesheet */
+html, body {
+  height: 100%;
+}
+
 body {
-  opacity: 0;
   overflow: hidden;
 }
 
@@ -19,20 +22,17 @@ nav {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
 }
 
-nav ul a i {
-  font-size: 2.1rem;
-}
-
+nav ul a i,
 .logo {
   font-size: 2.1rem;
 }
 
-.dropdown-button {
-  cursor: pointer;
-}
-
 nav .nav-wrapper ul li:hover {
   background-color: transparent;
+}
+
+.dropdown-button {
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -43,70 +43,57 @@ nav .nav-wrapper ul li:hover {
   margin-top: 5px;
 }
 
-.light-100 {
-  font-weight: 100;
+.copyright {
+  position: absolute;
 }
 
-.light-200 {
-  font-weight: 200;
+#projects,
+.slider,
+.slick-list {
+  height: 100%;
 }
 
-.light-300 {
-  font-weight: 300;
-}
-
-.light-400 {
-  font-weight: 400;
-}
-
-.heavy-400 {
-  font-weight: 400;
-}
-
-.project {
+.slick-slide {
+  color: #fff;
   background-color: #607d8b;
+  font-size: 5rem;
 }
 
 .middle {
-  color: #fff;
-  padding: 0px;
   margin: 0px;
-  font-size: 5rem;
+  vertical-align: middle;
 }
 
 .slick-dots {
   margin: 0px;
-  display: inline-block;
-  position: absolute;
-  height: 20px;
-  line-height: 10px;
-  z-index: 1000;
-}
-
-.slick-prev,
-.slick-next{
   position: absolute;
 }
 
-.slick-dots li {
-  display: inline;
-}
-
-.slick-dots li .btn-floating.btn-large {
+.slick-dots li .btn {
+  padding: 0px;
   width: 10px;
   height: 10px;
-  line-height: 10px;
-  margin: 5px;
+  margin: 12px;
   background-color: #fff;
 }
 
-.slick-dots li .btn-floating.btn-large:hover {
+.material-tooltip {
+  padding: 8px;
+  min-height: 1px;
+  z-index: 1000;
+}
+
+.backdrop {
+  will-change: initial;
+}
+
+.slick-dots li .btn:hover {
   webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.slick-active .btn-floating.btn-large {
+.slick-active .btn {
   background-color: #ff9800 !important;
 }
 
