@@ -140,6 +140,28 @@ nav .nav-wrapper i.copyright-icon {
   }
 }
 
+.logo-link {
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.logo-link:hover {
+  text-decoration: underline;
+}
+
+.inline {
+  display: inline;
+}
+
+i {
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
 .btn-email:hover,
 .btn-email:focus,
 .btn-email:active {
