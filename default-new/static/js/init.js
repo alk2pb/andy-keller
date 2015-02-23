@@ -12,6 +12,23 @@ $(document).ready(function() {
       arrows: false
   });
 
+  var i = 0;
+
+  $('.slick-slide').each(function() {
+    switch (i) {
+      case 0:
+        $(this).css('background-color', '#607d8b');
+        break;
+      case 1:
+        $(this).css('background-color', '#ff9800');
+        break;
+      case 2:
+        $(this).css('background-color', '#2196f3');
+        break;
+    }
+    i = i + 1;
+  });
+
   $('.p1').attr('data-tooltip','Project 1');
   $('.p2').attr('data-tooltip','Project 2');
   $('.p3').attr('data-tooltip','Project 3');
@@ -65,6 +82,8 @@ $(document).ready(function() {
         $('.slider').slick("slickPrev");
       }
     }
+
+
     // prevent page fom scrolling
     // return false;
   });
@@ -98,4 +117,13 @@ $(document).ready(function() {
       }
     }
   });
+
+  function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+      if ((new Date().getTime() - start) > milliseconds){
+        break;
+      }
+    }
+  }
 });
