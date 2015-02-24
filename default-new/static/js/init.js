@@ -17,13 +17,28 @@ $(document).ready(function() {
   $('.slick-slide').each(function() {
     switch (i) {
       case 0:
-        $(this).css('background-color', '#607d8b');
+        $(this).css('background-color', '#839098');
         break;
       case 1:
-        $(this).css('background-color', '#ff9800');
+        $(this).css('background-color', '#5481e6');
         break;
       case 2:
-        $(this).css('background-color', '#2196f3');
+        $(this).css('background-color', '#913ccd');
+        break;
+      case 3:
+        $(this).css('background-color', '#f15f74');
+        break;
+      case 4:
+        $(this).css('background-color', '#f76d3c');
+        break;
+      case 5:
+        $(this).css('background-color', '#f7d842');
+        break;
+      case 6:
+        $(this).css('background-color', '#2ca8c2');
+        break;
+      case 7:
+        $(this).css('background-color', '#98cb4a');
         break;
     }
     i = i + 1;
@@ -32,6 +47,11 @@ $(document).ready(function() {
   $('.p1').attr('data-tooltip','Project 1');
   $('.p2').attr('data-tooltip','Project 2');
   $('.p3').attr('data-tooltip','Project 3');
+  $('.p4').attr('data-tooltip','Project 4');
+  $('.p5').attr('data-tooltip','Project 5');
+  $('.p6').attr('data-tooltip','Project 6');
+  $('.p7').attr('data-tooltip','Project 7');
+  $('.p8').attr('data-tooltip','Project 8');
 
   $('.tooltipped').each(function() {
     $(this).tooltip({delay: 0});
@@ -44,8 +64,25 @@ $(document).ready(function() {
     $(this).css('line-height', $(window).height() + 'px');
   });
 
-  $('.slick-dots').css('left', $('.nav-wrapper').height()/2 - $('.slick-dots').width()/2 + 'px');
-  $('.slick-dots').css('top', $(window).height()/2 - $('.slick-dots').height()/2 + 'px');
+  var slickDotsInitialHeight = $('.slick-dots').height();
+  var slickDotsHeight = 0;
+  var slickDotsWidth = 0;
+
+  if (slickDotsInitialHeight > ($(window).height() - $('.nav-wrapper').height()*2)) {
+    $('.slick-dots li .btn').css('margin', '0px');
+    $('.slick-dots li .btn').each(function() {
+      slickDotsHeight = slickDotsHeight + $(this).height() + 11;
+    });
+    slickDotsWidth = $('.slick-dots li .btn').width();
+  }
+  else {
+    $('.slick-dots li .btn').css('margin', '12px');
+    slickDotsHeight = $('.slick-dots').height();
+    slickDotsWidth = $('.slick-dots').width();
+  }
+
+  $('.slick-dots').css('left', $('.nav-wrapper').height()/2 - slickDotsWidth/2 + 'px');
+  $('.slick-dots').css('top', $(window).height()/2 - slickDotsHeight/2 + 'px');
 
   $('.copyright').css('top', $('.nav-wrapper').height()/2 - $('.copyright').height()/2 + 'px');
   $('.copyright').css('left', $(window).width()/2 - $('.copyright').width()/2 + 'px');
@@ -62,8 +99,24 @@ $(document).ready(function() {
       $(this).css('line-height', $(window).height() + 'px');
     });
 
-    $('.slick-dots').css('left', $('.nav-wrapper').height()/2 - $('.slick-dots').width()/2 + 'px');
-    $('.slick-dots').css('top', $(window).height()/2 - $('.slick-dots').height()/2 + 'px');
+    var slickDotsHeight = 0;
+    var slickDotsWidth = 0;
+
+    if (slickDotsInitialHeight > ($(window).height() - $('.nav-wrapper').height()*2)) {
+      $('.slick-dots li .btn').css('margin', '0px');
+      $('.slick-dots li .btn').each(function() {
+        slickDotsHeight = slickDotsHeight + $(this).height() + 11;
+      });
+      slickDotsWidth = $('.slick-dots li .btn').width();
+    }
+    else {
+      $('.slick-dots li .btn').css('margin', '12px');
+      slickDotsHeight = $('.slick-dots').height();
+      slickDotsWidth = $('.slick-dots').width();
+    }
+
+    $('.slick-dots').css('left', $('.nav-wrapper').height()/2 - slickDotsWidth/2 + 'px');
+    $('.slick-dots').css('top', $(window).height()/2 - slickDotsHeight/2 + 'px');
 
     $('.copyright').css('top', $('.nav-wrapper').height()/2 - $('.copyright').height()/2 + 'px');
     $('.copyright').css('left', $(window).width()/2 - $('.copyright').width()/2 + 'px');
