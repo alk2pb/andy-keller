@@ -75,10 +75,26 @@ nav .nav-wrapper i.copyright-icon {
 
 .slick-dots li .btn {
   padding: 0px;
-  width: 10px;
-  height: 10px;
-  margin: 12px;
+  width: 12px;
+  height: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 26px;
   background-color: #fff;
+  transition: none;
+}
+
+@media(max-height:400px) {
+  .slick-dots li .btn {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media(max-width:600px) {
+  .slick-dots li .btn {
+    margin-left: 22px;
+  }
 }
 
 .material-tooltip {
