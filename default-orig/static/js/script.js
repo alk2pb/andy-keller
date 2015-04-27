@@ -8,7 +8,7 @@ $(document).ready(function() {
       $("#connect").height(height - 201);
   }
 
-  $('body').show()
+  $('body').show();
 
   // Make more-btns visible
   var dimension = 0;
@@ -36,11 +36,11 @@ $(document).ready(function() {
 
       if ($(window).height() >= dimension){
         $("#more-btn-group").css("height", dimension);
-        $(".animation-rotate").rotate({duration:200,animateTo:180})
+        $(".animation-rotate").rotate({duration:200,animateTo:180});
       }
       else {
         $("#more-btn-group").css("width", dimension);
-        $(".animation-rotate").rotate({duration:200,animateTo:90})
+        $(".animation-rotate").rotate({duration:200,animateTo:90});
       }
     });
     $("#more-btn-group").mouseleave(function() {
@@ -51,11 +51,11 @@ $(document).ready(function() {
 
       if ($(window).height() >= dimension){
         $("#more-btn-group").css("height", 76);
-        $(".animation-rotate").rotate({duration:200,animateTo:0})
+        $(".animation-rotate").rotate({duration:200,animateTo:0});
       }
       else {
         $("#more-btn-group").css("width", 76);
-        $(".animation-rotate").rotate({duration:200,animateTo:-90})
+        $(".animation-rotate").rotate({duration:200,animateTo:-90});
       }
     });
   }
@@ -112,7 +112,7 @@ $(document).ready(function() {
   $(".resume-link").css("left",resumepositionleft);
   $(".resume-link").css("top",resumepositiontop);
 
-  var rtime = new Date(1, 1, 2000, 12,00,00);
+  var rtime = new Date(1, 1, 2000, 12,0,0);
   var timeout = false;
   var delta = 200;
   $(window).resize(function() {
@@ -124,18 +124,18 @@ $(document).ready(function() {
 
       if ($(window).height() >= dimension) {
         if ($("#more-btn-group").hasClass("in")) {
-          $(".animation-rotate").rotate({duration:200,animateTo:180})
+          $(".animation-rotate").rotate({duration:200,animateTo:180});
         }
         else {
-          $(".animation-rotate").rotate({duration:200,animateTo:0})
+          $(".animation-rotate").rotate({duration:200,animateTo:0});
         }
       }
       else {
         if ($("#more-btn-group").hasClass("in")) {
-          $(".animation-rotate").rotate({duration:200,animateTo:90})
+          $(".animation-rotate").rotate({duration:200,animateTo:90});
         }
         else {
-          $(".animation-rotate").rotate({duration:200,animateTo:-90})
+          $(".animation-rotate").rotate({duration:200,animateTo:-90});
         }
       }
 
@@ -197,7 +197,7 @@ $(document).ready(function() {
       if ($(".navbar").offset().top > 50) {
           $(".navbar-fixed-top").addClass("top-nav-collapse");
           $(".navbar-fixed-top").addClass("shadow-z-2");
-          $(".profile-picture").fadeOut(800)
+          $(".profile-picture").fadeOut(800);
           $(".profile-picture-collapse").fadeIn(800);
       } else {
           $(".navbar-fixed-top").removeClass("top-nav-collapse");
