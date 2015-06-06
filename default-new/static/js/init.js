@@ -66,9 +66,6 @@ $(document).ready(function() {
 
   $('.slick-dots').css('top', $(window).height()/2 - $('.slick-dots').height()/2 + 'px');
 
-  $('.copyright').css('top', $('.nav-wrapper').height()/2 - $('.copyright').height()/2 + 'px');
-  $('.copyright').css('left', $(window).width()/2 - $('.copyright').width()/2 + 'px');
-
   $(window).resize(function() {
     $('.tooltipped').each(function() {
       $(this).mouseout();
@@ -82,9 +79,6 @@ $(document).ready(function() {
     });
 
     $('.slick-dots').css('top', $(window).height()/2 - $('.slick-dots').height()/2 + 'px');
-
-    $('.copyright').css('top', $('.nav-wrapper').height()/2 - $('.copyright').height()/2 + 'px');
-    $('.copyright').css('left', $(window).width()/2 - $('.copyright').width()/2 + 'px');
   });
 
   // Firefox

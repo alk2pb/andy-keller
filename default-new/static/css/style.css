@@ -35,20 +35,46 @@ nav .nav-wrapper ul li:hover {
   cursor: pointer;
 }
 
+nav .nav-wrapper .dropdown-content i {
+  line-height: 0px;
+}
+
 .dropdown-content {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  width: 150px;
+  /*width: 150px;*/
   margin-top: 5px;
+}
+
+.dropdown-content li>a {
+  /*padding: 0 0;*/
+  /*height: 44px;*/
+  /*line-height: 44px;*/
+}
+
+nav .nav-wrapper .dropdown-content i {
+  font-size: 20px;
+  display: inline;
+  margin-right: 5px;
 }
 
 .copyright {
   position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#nav-left, #nav-right {
+  position: relative;
+  z-index: 2;
 }
 
 nav .nav-wrapper i.copyright-icon {
   font-size: 14px;
+  display:inline;
 }
 
 #projects,
@@ -81,7 +107,10 @@ nav .nav-wrapper i.copyright-icon {
   margin-bottom: 12px;
   margin-left: 26px;
   background-color: #fff;
-  transition: none;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 @media(max-height:400px) {
@@ -94,6 +123,15 @@ nav .nav-wrapper i.copyright-icon {
 @media(max-width:600px) {
   .slick-dots li .btn {
     margin-left: 22px;
+  }
+  
+  nav .nav-wrapper i {
+    line-height: 56px;
+  }
+  
+  #nav-left i, 
+  #nav-right i {
+    font-size: 1rem;
   }
 }
 
